@@ -2,7 +2,7 @@
 <page class="page detail">
   <view class="detail-post-meta">
     <view class="detail-post-avatar">
-      <image class="detail-post-avatar-img" mode="scaleToFill" src="{{ detail.author.avatar_url }}" />
+      <navigator url="/pages/user/user?loginname={{detail.author.loginname}}"><image class="detail-post-avatar-img" mode="scaleToFill" src="{{ detail.author.avatar_url }}" /></navigator>
     </view>
     <view class="detail-post-info">
       <view class="detail-post-author-name">
@@ -46,7 +46,9 @@
       <block wx:for-items="{{ detail.replies }}" wx:key="detail.replies.id" wx:if="{{detail.replies.length > 0}}">
         <view class="detail-post-comment-item" index="{{index}}" id="{{item.id}}">
           <view class="detail-post-comment-avatar">
-            <image class="detail-post-comment-avatar-img" mode="scaleToFill" src="{{ item.author.avatar_url }}"></image>
+            <navigator url="/pages/user/user?loginname={{item.author.loginname}}">
+              <image class="detail-post-comment-avatar-img" mode="scaleToFill" src="{{ item.author.avatar_url }}"></image>
+            </navigator>
           </view>
           <view class="detail-post-comment-cell">
             <view class="detail-post-comment-info">

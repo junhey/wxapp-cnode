@@ -94,6 +94,14 @@ Page({
 
   },
 
+  //用户
+  user:function(e){
+    console.log(e);
+    wx.navigateTo({
+      url: '/pages/user/user'
+    });
+  },
+
   // 关闭--模态弹窗
   cancelChange: function() {
     this.setData({ modalHidden: true });

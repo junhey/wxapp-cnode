@@ -16,6 +16,8 @@ var de_collect = HOST + '/topic_collect/de_collect';
 function reply (id) {
   return HOST + "/reply/"+ id +"/ups"
 }
+//get /user/:loginname 用户详情
+var user = HOST + '/user';
 
 // get请求方法
 function fetchGet(url, callback) {
@@ -57,6 +59,7 @@ module.exports = {
   collect: collect,
   de_collect: de_collect,
   reply: reply,
+  user:user,
 
 
   // METHOD
