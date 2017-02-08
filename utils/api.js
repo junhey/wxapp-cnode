@@ -18,7 +18,8 @@ function reply (id) {
 }
 //get /user/:loginname 用户详情
 var user = HOST + '/user';
-
+//get /messages 获取已读和未读消息
+var messages = HOST + '/messages';
 // get请求方法
 function fetchGet(url, callback) {
   // return callback(null, top250)
@@ -60,6 +61,7 @@ module.exports = {
   de_collect: de_collect,
   reply: reply,
   user:user,
+  messages:messages,
 
 
   // METHOD

@@ -1,0 +1,10 @@
+<!--logs.wxml-->
+<view class="container">
+ 	<view class="login"></view>
+ 	<block>
+ 		<view class="topics_type"></view>
+ 		<view class="topics_title"></view>
+ 		<view class="topics_content"></view>
+ 		<view class="topics_btn"></view>
+ 	</block>
+</view>

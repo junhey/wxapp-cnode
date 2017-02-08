@@ -6,6 +6,7 @@
 /*导航 nav*/
 .top-bar {
   height: 72rpx;
+  line-height: 72rpx;
   background: #444;
   width:100%;
   position: fixed;
