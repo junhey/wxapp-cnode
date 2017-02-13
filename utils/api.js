@@ -3,6 +3,7 @@
 // api 路径
 var HOST = 'https://cnodejs.org/api/v1';
 // get /topics 主题首页
+//post /topics 新建主题
 var topics = HOST + '/topics';
 //get /topic/:id 主题详情
 var topic = HOST + '/topic';
@@ -16,6 +17,7 @@ var de_collect = HOST + '/topic_collect/de_collect';
 function reply (id) {
   return HOST + "/reply/"+ id +"/ups"
 }
+
 //get /user/:loginname 用户详情
 var user = HOST + '/user';
 //get /messages 获取已读和未读消息
